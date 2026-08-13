@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Specialities | MULHIRUSSUNNA EXCELLENT ACADEMY</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #ffffff;
+            color: #222;
+        }
+
+        header {
+            background: #581B4F;
+            color: white;
+            padding: 18px 6%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 20px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 15px;
+        }
+
+        .page-title {
+            background: linear-gradient(
+                135deg,
+                #581B4F,
+                #7a286d,
+                #3d1238
+            );
+
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .page-title h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .page-title p {
+            font-size: 18px;
+        }
+
+        .section {
+            padding: 60px 7%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 45px;
+        }
+
+        .intro h2 {
+            color: #581B4F;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+        .speciality-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .speciality-card {
+            background: white;
+            padding: 30px 25px;
+            border-radius: 18px;
+            box-shadow: 0 6px 22px rgba(0,0,0,0.10);
+            border-top: 4px solid #581B4F;
+            transition: 0.3s;
+        }
+
+        .speciality-card:hover {
+            transform: translateY(-6px);
+        }
+
+        .number {
+            width: 50px;
+            height: 50px;
+            background: #581B4F;
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            font-weight: bold;
+            margin-bottom: 18px;
+        }
+
+        .speciality-card h3 {
+            color: #581B4F;
+            font-size: 20px;
+            line-height: 1.4;
+            margin-bottom: 12px;
+        }
+
+        .speciality-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+        footer {
+            background: #581B4F;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            margin-top: 50px;
+        }
+
+        @media (max-width: 850px) {
+
+            .speciality-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+        @media (max-width: 600px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 12px;
+            }
+
+            nav a {
+                font-size: 13px;
+            }
+
+            .page-title h1 {
+                font-size: 30px;
+            }
+
+            .speciality-container {
+                grid-template-columns: 1fr;
+            }
+
+        }
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.brand-name span {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <div class="brand">
+
+    <img src="images/logo.png"
+         alt="MULHIRUSSUNNA Logo">
+
+    <div class="brand-name">
+        MULHIRUSSUNNA
+        <span>EXCELLENT ACADEMY</span>
+    </div>
+
+</div>
+
+        <nav>
+
+    <a href="index.html">Home</a>
+
+    <a href="about.html">About</a>
+
+    <a href="courses.html">Courses</a>
+
+    <a href="faculty.html">Faculty</a>
+
+    <a href="specialities.html">Specialities</a>
+
+    <a href="admission.html">Admission</a>
+
+    <a href="index.html#contact">Contact</a>
+
+</nav>
+
+    </header>
+
+
+    <!-- TITLE -->
+
+    <section class="page-title">
+
+        <h1>Our Specialities</h1>
+
+        <p>
+            Tradition • Knowledge • Excellence
+        </p>
+
+    </section>
+
+
+    <!-- SPECIALITIES -->
+
+    <section class="section">
+
+        <div class="intro">
+
+            <h2>Why MULHIRUSSUNNA?</h2>
+
+            <p>
+                MULHIRUSSUNNA EXCELLENT ACADEMY provides a
+                balanced educational environment combining
+                traditional learning, academic excellence,
+                spiritual guidance and modern facilities.
+            </p>
+
+        </div>
+
+
+        <div class="speciality-container">
+
+
+            <div class="speciality-card">
+
+                <div class="number">01</div>
+
+                <h3>
+                    Traditional Dars System
+                </h3>
+
+                <p>
+                    A traditional Dars-based learning system
+                    that gives importance to structured
+                    religious and academic studies.
+                </p>
+
+            </div>
+
+
+            <div class="speciality-card">
+
+                <div class="number">02</div>
+
+                <h3>
+                    Spiritual Guidance
+                </h3>
+
+                <p>
+                    Spiritual guidance under the valuable
+                    direction of Ponnmala Baqavi Usthad.
+                </p>
+
+            </div>
+
+
+            <div class="speciality-card">
+
+                <div class="number">03</div>
+
+                <h3>
+                    Smart Class Room
+                </h3>
+
+                <p>
+                    Modern smart classroom facilities to make
+                    learning more effective and engaging.
+                </p>
+
+            </div>
+
+
+            <div class="speciality-card">
+
+                <div class="number">04</div>
+
+                <h3>
+                    Ahlussunna Ideological Classes
+                </h3>
+
+                <p>
+                    Classes focused on understanding and
+                    strengthening Ahlussunna ideological
+                    knowledge.
+                </p>
+
+            </div>
+
+
+            <div class="speciality-card">
+
+                <div class="number">05</div>
+
+                <h3>
+                    Academic Study up to Graduation
+                </h3>
+
+                <p>
+                    Academic learning opportunities extending
+                    up to graduation level.
+                </p>
+
+            </div>
+
+
+            <div class="speciality-card">
+
+                <div class="number">06</div>
+
+                <h3>
+                    Linguistic Learning
+                </h3>
+
+                <p>
+                    Special focus on developing language skills
+                    and effective communication.
+                </p>
+
+            </div>
+
+
+            <div class="speciality-card">
+
+                <div class="number">07</div>
+
+                <h3>
+                    IT & Library Facilities
+                </h3>
+
+                <p>
+                    Information technology resources and
+                    library facilities supporting students'
+                    learning and research.
+                </p>
+
+            </div>
+
+
+            <div class="speciality-card">
+
+                <div class="number">08</div>
+
+                <h3>
+                    Training by Experts
+                </h3>
+
+                <p>
+                    Special training sessions conducted with
+                    the support of experienced experts.
+                </p>
+
+            </div>
+
+
+            <div class="speciality-card">
+
+                <div class="number">09</div>
+
+                <h3>
+                    Interactions with NET & JRF Holders
+                </h3>
+
+                <p>
+                    Opportunities for students to interact
+                    with NET and JRF qualified scholars and
+                    academic experts.
+                </p>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 MULHIRUSSUNNA EXCELLENT ACADEMY
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

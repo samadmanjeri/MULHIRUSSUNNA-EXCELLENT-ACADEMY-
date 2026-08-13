@@ -1,0 +1,1141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>MULHIRUSSUNNA EXCELLENT ACADEMY</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #ffffff;
+            color: #222;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #581B4F;
+            color: white;
+            padding: 18px 6%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: flex;
+            gap: 20px;
+        }
+
+        .menu a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .menu a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* HERO */
+
+        .hero {
+            min-height: 82vh;
+
+            background: linear-gradient(
+                135deg,
+                #581B4F,
+                #7a286d,
+                #3d1238
+            );
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero-content {
+            color: white;
+            max-width: 900px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 20px;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 14px 30px;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .btn-light {
+            background: white;
+            color: #581B4F;
+        }
+
+        .btn-outline {
+            border: 2px solid white;
+            color: white;
+        }
+
+
+        /* COMMON SECTION */
+
+        .section {
+            padding: 75px 7%;
+            text-align: center;
+        }
+
+        .section-title {
+            color: #581B4F;
+            font-size: 32px;
+            margin-bottom: 18px;
+        }
+
+        .section-description {
+            max-width: 850px;
+            margin: 0 auto;
+            color: #666;
+            line-height: 1.8;
+        }
+
+
+        /* ABOUT */
+
+        .about-box {
+            max-width: 900px;
+            margin: 35px auto 0;
+
+            background: #faf7f9;
+
+            padding: 35px;
+
+            border-radius: 20px;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.07);
+        }
+
+        .about-box p {
+            color: #555;
+            line-height: 1.9;
+        }
+
+
+        /* SPECIALITIES */
+
+        .speciality-grid {
+            max-width: 1100px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+        .speciality-card {
+            padding: 28px 22px;
+
+            background: white;
+
+            border-radius: 17px;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.09);
+
+            border-top: 4px solid #581B4F;
+        }
+
+        .speciality-card h3 {
+            color: #581B4F;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+
+        .speciality-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+
+        /* FACULTY */
+
+        .faculty-grid {
+            max-width: 850px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 25px;
+        }
+
+        .faculty-card {
+            padding: 30px 20px;
+
+            background: white;
+
+            border-radius: 18px;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.09);
+        }
+
+        .faculty-icon {
+            width: 70px;
+            height: 70px;
+
+            margin: 0 auto 18px;
+
+            background: #581B4F;
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 26px;
+            font-weight: bold;
+        }
+
+        .faculty-card h3 {
+            color: #581B4F;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .faculty-card p {
+            color: #777;
+            font-size: 14px;
+        }
+
+
+        /* COURSES */
+
+        .course-grid {
+            max-width: 1100px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+        .course-card {
+            padding: 28px 22px;
+
+            background: white;
+
+            border-radius: 17px;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.09);
+        }
+
+        .course-card h3 {
+            color: #581B4F;
+            margin-bottom: 10px;
+        }
+
+        .course-card p {
+            color: #666;
+            font-size: 14px;
+            line-height: 1.7;
+        }
+
+
+        /* ADMISSION */
+
+        .admission {
+            background: #581B4F;
+            color: white;
+        }
+
+        .admission h2 {
+            font-size: 32px;
+            margin-bottom: 15px;
+        }
+
+        .admission p {
+            max-width: 700px;
+            margin: 0 auto 25px;
+            line-height: 1.7;
+        }
+
+
+        /* CONTACT */
+
+        .contact-box {
+            max-width: 800px;
+            margin: 40px auto 0;
+
+            background: #faf7f9;
+
+            padding: 35px;
+
+            border-radius: 20px;
+        }
+
+        .contact-box h3 {
+            color: #581B4F;
+            margin-bottom: 15px;
+        }
+
+        .contact-box p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #3d1238;
+            color: white;
+
+            text-align: center;
+
+            padding: 28px 20px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 850px) {
+
+            .speciality-grid,
+            .course-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            .menu {
+                gap: 10px;
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+
+            .menu a {
+                font-size: 12px;
+            }
+
+            .hero {
+                min-height: 75vh;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 16px;
+            }
+
+            .section {
+                padding: 55px 6%;
+            }
+
+            .section-title {
+                font-size: 27px;
+            }
+
+            .speciality-grid,
+            .faculty-grid,
+            .course-grid {
+                grid-template-columns: 1fr;
+            }
+
+        }
+/* MOBILE MENU BUTTON */
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+
+/* MOBILE MENU */
+
+@media (max-width: 650px) {
+
+    .menu-toggle {
+        display: block;
+    }
+
+    header {
+        position: sticky;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background: #581B4F;
+        flex-direction: column;
+        align-items: center;
+        padding: 20px 0;
+        gap: 18px;
+    }
+
+    .menu.active {
+        display: flex;
+    }
+
+    .menu a {
+        font-size: 15px;
+    }
+
+}
+/* HERO ENHANCEMENT */
+
+.hero-badge {
+    display: inline-block;
+    border: 1px solid rgba(255,255,255,0.5);
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-size: 12px;
+    letter-spacing: 1px;
+    margin-bottom: 25px;
+    color: #f5eaf3;
+}
+
+.hero h1 {
+    animation: fadeUp 1s ease;
+}
+
+.hero h1 span {
+    color: #f5dff0;
+}
+
+.hero-tagline {
+    font-size: 22px !important;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-bottom: 8px !important;
+}
+
+.hero-description {
+    font-size: 17px !important;
+    opacity: 0.9;
+    margin-bottom: 30px !important;
+}
+
+.hero-buttons {
+    animation: fadeUp 1.2s ease;
+}
+
+.btn {
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-3px);
+}
+
+.btn-light:hover {
+    box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+}
+
+.btn-outline:hover {
+    background: white;
+    color: #581B4F;
+}
+
+@keyframes fadeUp {
+
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+/* SPECIALITY ENHANCEMENT */
+
+.speciality-card {
+    position: relative;
+    overflow: hidden;
+    transition: 0.35s ease;
+}
+
+.speciality-card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: #581B4F;
+    transition: 0.35s ease;
+}
+
+.speciality-card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 12px 28px rgba(88,27,79,0.15);
+}
+
+.speciality-card:hover::before {
+    height: 7px;
+}
+
+.speciality-number {
+    width: 45px;
+    height: 45px;
+    background: #581B4F;
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 18px;
+    font-weight: bold;
+    font-size: 15px;
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.brand-name span {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+    </style>
+
+</head>
+
+<script>
+
+function toggleMenu() {
+
+    const menu = document.getElementById("mainMenu");
+
+    menu.classList.toggle("active");
+
+}
+
+</script>
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+    <div class="brand">
+
+    <img src="images/logo.png"
+         alt="MULHIRUSSUNNA EXCELLENT ACADEMY">
+
+    <div class="brand-name">
+        MULHIRUSSUNNA
+        <span>EXCELLENT ACADEMY</span>
+    </div>
+
+</div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </button>
+
+    <nav class="menu" id="mainMenu">
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="courses.html">Courses</a>
+
+        <a href="faculty.html">Faculty</a>
+
+        <a href="specialities.html">Specialities</a>
+
+        <a href="admission.html">Admission</a>
+
+        <a href="#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+    <div class="hero-content">
+
+        <div class="hero-badge">
+            ESTABLISHED FOR KNOWLEDGE & EXCELLENCE
+        </div>
+
+        <h1>
+            MULHIRUSSUNNA<br>
+            <span>EXCELLENT ACADEMY</span>
+        </h1>
+
+        <p class="hero-tagline">
+            Knowledge • Character • Excellence
+        </p>
+
+        <p class="hero-description">
+            Tradition in Knowledge, Excellence in Education
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="about.html" class="btn btn-light">
+                Explore Academy
+            </a>
+
+            <a href="admission.html" class="btn btn-outline">
+                Apply for Admission
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+    <!-- ABOUT -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            About Our Academy
+        </h2>
+
+        <p class="section-description">
+            MULHIRUSSUNNA EXCELLENT ACADEMY is committed to
+            nurturing students through a balanced approach to
+            traditional learning, academic excellence,
+            spiritual guidance and modern education.
+        </p>
+
+        <div class="about-box">
+
+            <p>
+                Our academy provides an educational environment
+                where knowledge, discipline, character and
+                personal development are given importance.
+                Students are guided through traditional Dars
+                learning along with academic and modern
+                educational opportunities.
+            </p>
+
+        </div>
+
+    </section>
+
+
+<!-- SPECIALITIES -->
+
+<section class="section">
+
+    <h2 class="section-title">
+        Our Specialities
+    </h2>
+
+    <p class="section-description">
+        A unique educational environment combining
+        tradition, academics, spirituality and modern
+        learning facilities.
+    </p>
+
+
+    <div class="speciality-grid">
+
+
+        <div class="speciality-card">
+
+            <div class="speciality-number">01</div>
+
+            <h3>
+                Traditional Dars System
+            </h3>
+
+            <p>
+                Structured traditional learning with a
+                strong foundation in knowledge.
+            </p>
+
+        </div>
+
+
+        <div class="speciality-card">
+
+            <div class="speciality-number">02</div>
+
+            <h3>
+                Spiritual Guidance
+            </h3>
+
+            <p>
+                Spiritual guidance under the direction of
+                Ponnmala Baqavi Usthad.
+            </p>
+
+        </div>
+
+
+        <div class="speciality-card">
+
+            <div class="speciality-number">03</div>
+
+            <h3>
+                Smart Class Room
+            </h3>
+
+            <p>
+                Modern classroom facilities supporting
+                effective learning.
+            </p>
+
+        </div>
+
+
+        <div class="speciality-card">
+
+            <div class="speciality-number">04</div>
+
+            <h3>
+                Ahlussunna Ideological Classes
+            </h3>
+
+            <p>
+                Focused learning in Ahlussunna ideology
+                and understanding.
+            </p>
+
+        </div>
+
+
+        <div class="speciality-card">
+
+            <div class="speciality-number">05</div>
+
+            <h3>
+                Academic Study up to Graduation
+            </h3>
+
+            <p>
+                Academic learning opportunities extending
+                up to graduation level.
+            </p>
+
+        </div>
+
+
+        <div class="speciality-card">
+
+            <div class="speciality-number">06</div>
+
+            <h3>
+                Linguistic Learning
+            </h3>
+
+            <p>
+                Development of language skills and
+                communication abilities.
+            </p>
+
+        </div>
+
+
+        <div class="speciality-card">
+
+            <div class="speciality-number">07</div>
+
+            <h3>
+                IT & Library Facilities
+            </h3>
+
+            <p>
+                IT resources and library facilities
+                supporting learning and research.
+            </p>
+
+        </div>
+
+
+        <div class="speciality-card">
+
+            <div class="speciality-number">08</div>
+
+            <h3>
+                Training by Experts
+            </h3>
+
+            <p>
+                Special training sessions conducted with
+                the support of experienced experts.
+            </p>
+
+        </div>
+
+
+        <div class="speciality-card">
+
+            <div class="speciality-number">09</div>
+
+            <h3>
+                Interactions with NET & JRF Holders
+            </h3>
+
+            <p>
+                Opportunities to interact with qualified
+                scholars and academic experts.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <br><br>
+
+    <a href="specialities.html"
+       class="btn"
+       style="background:#581B4F;color:white;">
+
+        View Specialities Page
+
+    </a>
+
+</section>
+
+
+    <!-- FACULTY -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Our Faculty
+        </h2>
+
+        <p class="section-description">
+            Dedicated educators guiding students towards
+            knowledge, excellence and character.
+        </p>
+
+
+        <div class="faculty-grid">
+
+
+            <div class="faculty-card">
+
+                <div class="faculty-icon">
+                    P
+                </div>
+
+                <h3>
+                    Ukkasha Ahsani Pappinippara
+                </h3>
+
+                <p>
+                    Principal
+                </p>
+
+            </div>
+
+
+            <div class="faculty-card">
+
+                <div class="faculty-icon">
+                    L
+                </div>
+
+                <h3>
+                    Hafiz Ashique Ahsani Thanallur
+                </h3>
+
+                <p>
+                    Lecturer
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <br><br>
+
+        <a href="faculty.html"
+           class="btn"
+           style="background:#581B4F;color:white;">
+            View All Faculty
+        </a>
+
+    </section>
+
+
+    <!-- COURSES -->
+
+    <section class="section">
+
+        <h2 class="section-title">
+            Our Courses
+        </h2>
+
+        <p class="section-description">
+            Educational programs designed to develop
+            knowledge, skills and academic growth.
+        </p>
+
+
+        <div class="course-grid">
+
+
+            <div class="course-card">
+
+                <h3>
+                    Islamic Studies
+                </h3>
+
+                <p>
+                    Structured learning in Islamic knowledge,
+                    values and understanding.
+                </p>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <h3>
+                    Arabic Language
+                </h3>
+
+                <p>
+                    Systematic development of Arabic language
+                    skills.
+                </p>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <h3>
+                    Qur'an Studies
+                </h3>
+
+                <p>
+                    Meaningful learning and understanding of
+                    the Qur'an.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <br><br>
+
+        <a href="courses.html"
+           class="btn"
+           style="background:#581B4F;color:white;">
+            View All Courses
+        </a>
+
+    </section>
+
+
+    <!-- ADMISSION -->
+
+    <section class="section admission">
+
+        <h2>
+            Admissions Are Open
+        </h2>
+
+        <p>
+            Begin your educational journey with
+            MULHIRUSSUNNA EXCELLENT ACADEMY.
+            Contact us for admission details and
+            further information.
+        </p>
+
+        <a href="admission.html"
+           class="btn btn-light">
+            Admission Details
+        </a>
+
+    </section>
+
+
+    <!-- CONTACT -->
+
+    <section class="section" id="contact">
+
+        <h2 class="section-title">
+            Contact Us
+        </h2>
+
+        <p class="section-description">
+            Get in touch with MULHIRUSSUNNA EXCELLENT ACADEMY
+            for admissions and further information.
+        </p>
+
+
+        <div class="contact-box">
+
+    <h3>
+        MULHIRUSSUNNA EXCELLENT ACADEMY
+    </h3>
+
+    <p>
+        📞 Phone: 9048593825
+    </p>
+
+    <p>
+        📍 Kananchery, Randathani, Kottakkal,
+        Malappuram, Kerala, India
+    </p>
+
+    <p>
+    📷 Instagram:
+    <a href="https://www.instagram.com/mulhirussunna_excellent_academ/"
+       target="_blank"
+       style="color:#581B4F; font-weight:bold; text-decoration:none;">
+        @mulhirussunna_excellent_academy
+    </a>
+</p>
+
+    <br>
+
+    <div class="hero-buttons">
+
+        <a href="tel:9048593825"
+           class="btn"
+           style="background:#581B4F;color:white;">
+            📞 Call Us
+        </a>
+
+        <a href="https://api.whatsapp.com/send?phone=919048593825"
+   class="btn"
+   style="background:#581B4F;color:white;"
+   target="_blank">
+    💬 WhatsApp
+</a>
+
+    </div>
+
+</div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 MULHIRUSSUNNA EXCELLENT ACADEMY
+        </p>
+
+        <br>
+
+        <p>
+            Education • Knowledge • Character
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

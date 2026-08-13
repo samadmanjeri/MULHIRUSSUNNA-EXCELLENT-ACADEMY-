@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Courses | MULHIRUSSUNNA EXCELLENT ACADEMY</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #ffffff;
+            color: #222;
+        }
+
+
+        /* ================= HEADER ================= */
+
+        header {
+            background: #581B4F;
+            color: white;
+            padding: 18px 6%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* ================= PAGE TITLE ================= */
+
+        .page-title {
+            background: linear-gradient(
+                135deg,
+                #581B4F,
+                #7a286d,
+                #3d1238
+            );
+
+            color: white;
+            text-align: center;
+            padding: 70px 20px;
+        }
+
+        .page-title h1 {
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        .page-title p {
+            font-size: 18px;
+        }
+
+
+        /* ================= COURSES SECTION ================= */
+
+        .courses-section {
+            padding: 60px 7%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto 45px;
+        }
+
+        .intro h2 {
+            color: #581B4F;
+            font-size: 30px;
+            margin-bottom: 15px;
+        }
+
+        .intro p {
+            color: #666;
+            line-height: 1.8;
+        }
+
+
+        /* ================= COURSE GRID ================= */
+
+        .course-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+
+        /* ================= COURSE CARD ================= */
+
+        .course-card {
+            background: white;
+
+            padding: 30px 25px;
+
+            border-radius: 18px;
+
+            box-shadow: 0 6px 22px rgba(0,0,0,0.10);
+
+            border-top: 4px solid #581B4F;
+
+            transition: 0.3s;
+        }
+
+        .course-card:hover {
+            transform: translateY(-7px);
+        }
+
+
+        /* ================= COURSE ICON ================= */
+
+        .course-icon {
+            width: 55px;
+            height: 55px;
+
+            background: #581B4F;
+            color: white;
+
+            border-radius: 50%;
+
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            font-size: 25px;
+
+            margin-bottom: 20px;
+        }
+
+
+        .course-card h3 {
+            color: #581B4F;
+            font-size: 21px;
+            margin-bottom: 12px;
+        }
+
+        .course-card p {
+            color: #666;
+            line-height: 1.7;
+            font-size: 14px;
+        }
+
+
+        /* ================= ADMISSION BOX ================= */
+
+        .admission-box {
+            margin-top: 55px;
+
+            background: #581B4F;
+            color: white;
+
+            text-align: center;
+
+            padding: 40px 20px;
+
+            border-radius: 20px;
+        }
+
+        .admission-box h2 {
+            margin-bottom: 12px;
+        }
+
+        .admission-box p {
+            margin-bottom: 25px;
+            line-height: 1.7;
+        }
+
+
+        /* ================= BUTTON ================= */
+
+        .btn {
+            display: inline-block;
+
+            background: white;
+            color: #581B4F;
+
+            padding: 13px 28px;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            opacity: 0.9;
+        }
+
+
+        /* ================= FOOTER ================= */
+
+        footer {
+            background: #581B4F;
+            color: white;
+
+            text-align: center;
+
+            padding: 25px;
+
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+
+        /* ================= TABLET ================= */
+
+        @media (max-width: 850px) {
+
+            .course-container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        /* ================= MOBILE ================= */
+
+        @media (max-width: 650px) {
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .page-title {
+                padding: 55px 20px;
+            }
+
+            .page-title h1 {
+                font-size: 30px;
+            }
+
+            .page-title p {
+                font-size: 16px;
+            }
+
+            .courses-section {
+                padding: 50px 6%;
+            }
+
+            .intro h2 {
+                font-size: 27px;
+            }
+
+            .course-container {
+                grid-template-columns: 1fr;
+            }
+
+        }
+        .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.brand-name span {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- ================= HEADER ================= -->
+
+    <header>
+
+        <div class="brand">
+
+    <img src="images/logo.png"
+         alt="MULHIRUSSUNNA Logo">
+
+    <div class="brand-name">
+        MULHIRUSSUNNA
+        <span>EXCELLENT ACADEMY</span>
+    </div>
+
+</div>
+
+        <nav>
+
+            <a href="index.html">
+                Home
+            </a>
+
+            <a href="about.html">
+                About
+            </a>
+
+            <a href="courses.html">
+                Courses
+            </a>
+
+            <a href="faculty.html">
+                Faculty
+            </a>
+
+            <a href="specialities.html">
+                Specialities
+            </a>
+
+            <a href="admission.html">
+                Admission
+            </a>
+
+            <a href="index.html#contact">
+                Contact
+            </a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- ================= PAGE TITLE ================= -->
+
+    <section class="page-title">
+
+        <h1>
+            Our Courses
+        </h1>
+
+        <p>
+            Learning • Knowledge • Excellence
+        </p>
+
+    </section>
+
+
+    <!-- ================= COURSES ================= -->
+
+    <section class="courses-section">
+
+
+        <div class="intro">
+
+            <h2>
+                Programs We Offer
+            </h2>
+
+            <p>
+                Explore our educational programs designed to
+                support academic excellence, knowledge,
+                personal development and character building.
+            </p>
+
+        </div>
+
+
+        <!-- COURSE CARDS -->
+
+        <div class="course-container">
+
+
+            <!-- COURSE 01 -->
+
+            <div class="course-card">
+
+                <div class="course-icon">
+                    📖
+                </div>
+
+                <h3>
+                    Islamic Studies
+                </h3>
+
+                <p>
+                    A structured learning program focused on
+                    Islamic knowledge, values and understanding.
+                </p>
+
+            </div>
+
+
+            <!-- COURSE 02 -->
+
+            <div class="course-card">
+
+                <div class="course-icon">
+                    ع
+                </div>
+
+                <h3>
+                    Arabic Language
+                </h3>
+
+                <p>
+                    Developing Arabic language skills through
+                    systematic learning, practice and
+                    communication.
+                </p>
+
+            </div>
+
+
+            <!-- COURSE 03 -->
+
+            <div class="course-card">
+
+                <div class="course-icon">
+                    Q
+                </div>
+
+                <h3>
+                    Qur'an Studies
+                </h3>
+
+                <p>
+                    Learning and understanding the Qur'an
+                    through a meaningful educational approach.
+                </p>
+
+            </div>
+
+
+            <!-- COURSE 04 -->
+
+            <div class="course-card">
+
+                <div class="course-icon">
+                    A
+                </div>
+
+                <h3>
+                    Academic Programs
+                </h3>
+
+                <p>
+                    Educational programs designed to support
+                    students in their academic development
+                    and future goals.
+                </p>
+
+            </div>
+
+
+            <!-- COURSE 05 -->
+
+            <div class="course-card">
+
+                <div class="course-icon">
+                    💻
+                </div>
+
+                <h3>
+                    Computer Education
+                </h3>
+
+                <p>
+                    Developing essential digital and computer
+                    skills for the modern educational and
+                    professional environment.
+                </p>
+
+            </div>
+
+
+            <!-- COURSE 06 -->
+
+            <div class="course-card">
+
+                <div class="course-icon">
+                    ★
+                </div>
+
+                <h3>
+                    Skill Development
+                </h3>
+
+                <p>
+                    Activities and programs that help students
+                    discover, develop and improve their
+                    abilities.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- ================= ADMISSION ================= -->
+
+        <div class="admission-box">
+
+            <h2>
+                Admissions
+            </h2>
+
+            <p>
+                Interested in joining
+                MULHIRUSSUNNA EXCELLENT ACADEMY?
+                Start your educational journey with us.
+            </p>
+
+
+            <!-- THIS BUTTON NOW OPENS ADMISSION PAGE -->
+
+            <a
+                href="admission.html"
+                class="btn">
+
+                Admission Details
+
+            </a>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <p>
+            © 2026 MULHIRUSSUNNA EXCELLENT ACADEMY
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

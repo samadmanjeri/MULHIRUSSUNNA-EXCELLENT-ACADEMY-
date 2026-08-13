@@ -1,0 +1,816 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Faculty | MULHIRUSSUNNA EXCELLENT ACADEMY</title>
+
+<style>
+
+/* ================================
+   BASIC
+================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #222;
+}
+
+
+/* ================================
+   HEADER
+================================ */
+
+header {
+    background: #581B4F;
+    color: white;
+
+    padding: 18px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+    align-items: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #f5dff0;
+}
+
+
+/* ================================
+   PAGE TITLE
+================================ */
+
+.page-title {
+    background: linear-gradient(
+        135deg,
+        #581B4F,
+        #7a286d,
+        #3d1238
+    );
+
+    color: white;
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+.page-title h1 {
+    font-size: 44px;
+    margin-bottom: 12px;
+}
+
+.page-title p {
+    font-size: 18px;
+    opacity: 0.95;
+}
+
+
+/* ================================
+   MAIN SECTION
+================================ */
+
+.faculty-section {
+    max-width: 1150px;
+    margin: auto;
+    padding: 70px 6%;
+}
+
+
+/* ================================
+   INTRO
+================================ */
+
+.intro {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 55px;
+}
+
+.intro h2 {
+    color: #581B4F;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    color: #666;
+    line-height: 1.8;
+    font-size: 15px;
+}
+
+
+/* ================================
+   SECTION LABEL
+================================ */
+
+.section-label {
+    text-align: center;
+    color: #581B4F;
+
+    font-size: 27px;
+
+    margin-bottom: 30px;
+
+    position: relative;
+}
+
+.section-label::after {
+    content: "";
+
+    display: block;
+
+    width: 55px;
+    height: 3px;
+
+    background: #581B4F;
+
+    margin: 12px auto 0;
+
+    border-radius: 10px;
+}
+
+
+/* ================================
+   MAIN FACULTY
+================================ */
+
+.main-faculty {
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 30px;
+
+    margin-bottom: 70px;
+}
+
+
+/* ================================
+   GUEST FACULTY
+================================ */
+
+.guest-faculty {
+    display: grid;
+
+    grid-template-columns: repeat(4, 1fr);
+
+    gap: 22px;
+}
+
+
+/* ================================
+   FACULTY CARD
+================================ */
+
+.faculty-card {
+
+    background: #ffffff;
+
+    text-align: center;
+
+    border-radius: 20px;
+
+    padding: 32px 20px;
+
+    box-shadow:
+        0 6px 22px rgba(0,0,0,0.09);
+
+    border-top: 4px solid #581B4F;
+
+    transition: all 0.35s ease;
+}
+
+.faculty-card:hover {
+
+    transform: translateY(-7px);
+
+    box-shadow:
+        0 14px 30px rgba(88,27,79,0.17);
+}
+
+
+/* ================================
+   ROUND PHOTO
+================================ */
+
+.faculty-photo-box {
+
+    width: 145px;
+    height: 145px;
+
+    margin: 0 auto 22px;
+
+    border-radius: 50%;
+
+    overflow: hidden;
+
+    background: #faf7f9;
+
+    border: 5px solid #f1e6ef;
+
+    box-shadow:
+        0 5px 18px rgba(88,27,79,0.15);
+}
+
+
+/* PHOTO */
+
+.faculty-photo {
+
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+
+    display: block;
+
+    transition: transform 0.4s ease;
+}
+
+.faculty-card:hover .faculty-photo {
+
+    transform: scale(1.06);
+}
+
+
+/* ================================
+   FACULTY NAME
+================================ */
+
+.faculty-card h3 {
+
+    color: #581B4F;
+
+    font-size: 19px;
+
+    line-height: 1.45;
+
+    margin-bottom: 9px;
+}
+
+
+/* ================================
+   POSITION
+================================ */
+
+.position {
+
+    color: #777;
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* ================================
+   MAIN FACULTY PHOTO
+================================ */
+
+.main-faculty .faculty-photo-box {
+
+    width: 165px;
+    height: 165px;
+}
+
+
+/* Main faculty names */
+
+.main-faculty .faculty-card h3 {
+
+    font-size: 21px;
+}
+
+
+/* ================================
+   GUEST TITLE
+================================ */
+
+.guest-title-area {
+
+    margin-top: 10px;
+
+    margin-bottom: 35px;
+}
+
+
+/* ================================
+   FOOTER
+================================ */
+
+footer {
+
+    background: #3d1238;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 28px 20px;
+
+    margin-top: 40px;
+}
+
+footer p {
+
+    font-size: 14px;
+
+    line-height: 1.6;
+}
+
+
+/* ================================
+   TABLET
+================================ */
+
+@media (max-width: 1000px) {
+
+    .guest-faculty {
+
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+}
+
+
+/* ================================
+   MOBILE
+================================ */
+
+@media (max-width: 700px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+        text-align: center;
+    }
+
+    nav {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 10px;
+    }
+
+    nav a {
+
+        font-size: 12px;
+    }
+
+    .page-title {
+
+        padding: 55px 20px;
+    }
+
+    .page-title h1 {
+
+        font-size: 32px;
+    }
+
+    .page-title p {
+
+        font-size: 16px;
+    }
+
+    .faculty-section {
+
+        padding: 55px 6%;
+    }
+
+    .intro h2 {
+
+        font-size: 27px;
+    }
+
+    .main-faculty {
+
+        grid-template-columns: 1fr;
+    }
+
+    .guest-faculty {
+
+        grid-template-columns: 1fr;
+    }
+
+    .faculty-photo-box {
+
+        width: 140px;
+        height: 140px;
+    }
+
+    .main-faculty .faculty-photo-box {
+
+        width: 155px;
+        height: 155px;
+    }
+
+}
+
+
+/* ================================
+   SMALL MOBILE
+================================ */
+
+@media (max-width: 400px) {
+
+    .logo {
+
+        font-size: 18px;
+    }
+
+    .faculty-photo-box {
+
+        width: 130px;
+        height: 130px;
+    }
+
+    .main-faculty .faculty-photo-box {
+
+        width: 145px;
+        height: 145px;
+    }
+
+    .faculty-card h3 {
+
+        font-size: 18px;
+    }
+
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.brand-name span {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- =================================
+     HEADER
+================================= -->
+
+<header>
+
+    <div class="brand">
+
+    <img src="images/logo.png"
+         alt="MULHIRUSSUNNA Logo">
+
+    <div class="brand-name">
+        MULHIRUSSUNNA
+        <span>EXCELLENT ACADEMY</span>
+    </div>
+
+</div>
+
+    <nav>
+
+        <a href="index.html">
+            Home
+        </a>
+
+        <a href="about.html">
+            About
+        </a>
+
+        <a href="courses.html">
+            Courses
+        </a>
+
+        <a href="faculty.html">
+            Faculty
+        </a>
+
+        <a href="specialities.html">
+            Specialities
+        </a>
+
+        <a href="admission.html">
+            Admission
+        </a>
+
+        <a href="index.html#contact">
+            Contact
+        </a>
+
+    </nav>
+
+</header>
+
+
+<!-- =================================
+     PAGE TITLE
+================================= -->
+
+<section class="page-title">
+
+    <h1>
+        Our Faculty
+    </h1>
+
+    <p>
+        Dedicated • Experienced • Inspiring
+    </p>
+
+</section>
+
+
+<!-- =================================
+     FACULTY SECTION
+================================= -->
+
+<section class="faculty-section">
+
+
+    <!-- INTRO -->
+
+    <div class="intro">
+
+        <h2>
+            Meet Our Faculty
+        </h2>
+
+        <p>
+            Our dedicated faculty members guide students
+            towards knowledge, academic excellence,
+            spiritual growth and good character.
+        </p>
+
+    </div>
+
+
+    <!-- =================================
+         PRINCIPAL & LECTURER
+    ================================= -->
+
+    <div class="section-label">
+        Academic Leadership
+    </div>
+
+
+    <div class="main-faculty">
+
+
+        <!-- PRINCIPAL -->
+
+        <div class="faculty-card">
+
+            <div class="faculty-photo-box">
+
+                <img
+                    src="images/principal.jpg"
+                    alt="Ukkasha Ahsani Pappinippara"
+                    class="faculty-photo"
+                >
+
+            </div>
+
+            <h3>
+                Ukkasha Ahsani Pappinippara
+            </h3>
+
+            <div class="position">
+                Principal
+            </div>
+
+        </div>
+
+
+        <!-- LECTURER -->
+
+        <div class="faculty-card">
+
+            <div class="faculty-photo-box">
+
+                <img
+                    src="images/lecturer.jpg"
+                    alt="Hafiz Ashique Ahsani Thanalur"
+                    class="faculty-photo"
+                >
+
+            </div>
+
+            <h3>
+                Hafiz Ashique Ahsani Thanalur
+            </h3>
+
+            <div class="position">
+                Lecturer
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- =================================
+         GUEST FACULTIES
+    ================================= -->
+
+    <div class="guest-title-area">
+
+        <h2 class="section-label">
+            Guest Faculties
+        </h2>
+
+    </div>
+
+
+    <div class="guest-faculty">
+
+
+        <!-- MUSTHAFA -->
+
+        <div class="faculty-card">
+
+            <div class="faculty-photo-box">
+
+                <img
+                    src="images/musthafa.jpg"
+                    alt="Musthafa Ahsani Kizhisseri"
+                    class="faculty-photo"
+                >
+
+            </div>
+
+            <h3>
+                Musthafa Ahsani Kizhisseri
+            </h3>
+
+            <div class="position">
+                Thadheebu Nahvu
+            </div>
+
+        </div>
+
+
+        <!-- YOUNUS -->
+
+        <div class="faculty-card">
+
+            <div class="faculty-photo-box">
+
+                <img
+                    src="images/younus.jpg"
+                    alt="Qari Younus Nusri Al Ahsani"
+                    class="faculty-photo"
+                >
+
+            </div>
+
+            <h3>
+                Qari Younus Nusri Al Ahsani
+            </h3>
+
+            <div class="position">
+                Qur'anic
+            </div>
+
+        </div>
+
+
+        <!-- KABEER -->
+
+        <div class="faculty-card">
+
+            <div class="faculty-photo-box">
+
+                <img
+                    src="images/kabeer.jpg"
+                    alt="Kabeer Saquafi Thennala"
+                    class="faculty-photo"
+                >
+
+            </div>
+
+            <h3>
+                Kabeer Saquafi Thennala
+            </h3>
+
+            <div class="position">
+                Academic
+            </div>
+
+        </div>
+
+
+        <!-- NABEEL -->
+
+        <div class="faculty-card">
+
+            <div class="faculty-photo-box">
+
+                <img
+                    src="images/nabeel.jpg"
+                    alt="Hafiz Nabeel Mueeni Parappur"
+                    class="faculty-photo"
+                >
+
+            </div>
+
+            <h3>
+                Hafiz Nabeel Mueeni Parappur
+            </h3>
+
+            <div class="position">
+                Basic Translation
+            </div>
+
+        </div>
+
+
+    </div>
+
+
+</section>
+
+
+<!-- =================================
+     FOOTER
+================================= -->
+
+<footer>
+
+    <p>
+        © 2026 MULHIRUSSUNNA EXCELLENT ACADEMY
+    </p>
+
+    <br>
+
+    <p>
+        Education • Knowledge • Character
+    </p>
+
+</footer>
+
+
+</body>
+
+</html>

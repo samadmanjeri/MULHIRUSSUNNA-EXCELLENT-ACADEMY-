@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>About Us | MULHIRUSSUNNA EXCELLENT ACADEMY</title>
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            background: #ffffff;
+            color: #222;
+        }
+
+        /* HEADER */
+
+        header {
+            background: #581B4F;
+            color: white;
+            padding: 18px 6%;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        nav {
+            display: flex;
+            gap: 18px;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+
+        /* PAGE TITLE */
+
+        .page-title {
+            background: linear-gradient(
+                135deg,
+                #581B4F,
+                #7a286d,
+                #3d1238
+            );
+
+            color: white;
+            text-align: center;
+
+            padding: 70px 20px;
+        }
+
+        .page-title h1 {
+            font-size: 44px;
+            margin-bottom: 12px;
+        }
+
+        .page-title p {
+            font-size: 18px;
+        }
+
+
+        /* MAIN CONTENT */
+
+        .content {
+            max-width: 1100px;
+            margin: auto;
+
+            padding: 70px 7%;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 850px;
+            margin: 0 auto 55px;
+        }
+
+        .intro h2 {
+            color: #581B4F;
+            font-size: 32px;
+            margin-bottom: 18px;
+        }
+
+        .intro p {
+            color: #666;
+            line-height: 1.9;
+            font-size: 16px;
+        }
+
+
+        /* ABOUT BOX */
+
+        .about-box {
+            background: #faf7f9;
+
+            padding: 35px;
+
+            border-radius: 20px;
+
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+
+            margin-bottom: 50px;
+        }
+
+        .about-box h2 {
+            color: #581B4F;
+            margin-bottom: 18px;
+        }
+
+        .about-box p {
+            color: #555;
+            line-height: 1.9;
+            margin-bottom: 15px;
+        }
+
+
+        /* VISION MISSION */
+
+        .vm-container {
+            display: grid;
+
+            grid-template-columns: repeat(2, 1fr);
+
+            gap: 25px;
+
+            margin-top: 30px;
+        }
+
+        .vm-card {
+            background: white;
+
+            padding: 35px 28px;
+
+            border-radius: 18px;
+
+            box-shadow: 0 6px 22px rgba(0,0,0,0.10);
+
+            border-top: 4px solid #581B4F;
+        }
+
+        .vm-card h3 {
+            color: #581B4F;
+
+            font-size: 23px;
+
+            margin-bottom: 15px;
+        }
+
+        .vm-card p {
+            color: #666;
+
+            line-height: 1.8;
+
+            font-size: 15px;
+        }
+
+
+        /* EDUCATIONAL APPROACH */
+
+        .approach {
+            margin-top: 60px;
+
+            text-align: center;
+        }
+
+        .approach h2 {
+            color: #581B4F;
+
+            font-size: 30px;
+
+            margin-bottom: 15px;
+        }
+
+        .approach-intro {
+            max-width: 800px;
+
+            margin: 0 auto 35px;
+
+            color: #666;
+
+            line-height: 1.8;
+        }
+
+        .approach-grid {
+            display: grid;
+
+            grid-template-columns: repeat(3, 1fr);
+
+            gap: 22px;
+        }
+
+        .approach-card {
+            padding: 28px 22px;
+
+            background: #faf7f9;
+
+            border-radius: 17px;
+        }
+
+        .approach-card h3 {
+            color: #581B4F;
+
+            margin-bottom: 10px;
+
+            font-size: 18px;
+        }
+
+        .approach-card p {
+            color: #666;
+
+            font-size: 14px;
+
+            line-height: 1.7;
+        }
+
+
+        /* CTA */
+
+        .cta {
+            margin-top: 60px;
+
+            background: #581B4F;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 45px 25px;
+
+            border-radius: 20px;
+        }
+
+        .cta h2 {
+            font-size: 28px;
+
+            margin-bottom: 12px;
+        }
+
+        .cta p {
+            max-width: 700px;
+
+            margin: 0 auto 25px;
+
+            line-height: 1.7;
+        }
+
+        .btn {
+            display: inline-block;
+
+            background: white;
+
+            color: #581B4F;
+
+            padding: 14px 30px;
+
+            border-radius: 30px;
+
+            text-decoration: none;
+
+            font-weight: bold;
+        }
+
+
+        /* FOOTER */
+
+        footer {
+            background: #3d1238;
+
+            color: white;
+
+            text-align: center;
+
+            padding: 28px 20px;
+
+            margin-top: 50px;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+
+
+        /* MOBILE */
+
+        @media (max-width: 850px) {
+
+            .approach-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+        }
+
+
+        @media (max-width: 650px) {
+
+            header {
+                flex-direction: column;
+
+                gap: 15px;
+            }
+
+            nav {
+                flex-wrap: wrap;
+
+                justify-content: center;
+
+                gap: 10px;
+            }
+
+            nav a {
+                font-size: 12px;
+            }
+
+            .page-title h1 {
+                font-size: 32px;
+            }
+
+            .vm-container,
+            .approach-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .content {
+                padding: 55px 6%;
+            }
+
+        }
+        .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.brand-name span {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+       <div class="brand">
+
+    <img src="images/logo.png"
+         alt="MULHIRUSSUNNA Logo">
+
+    <div class="brand-name">
+        MULHIRUSSUNNA
+        <span>EXCELLENT ACADEMY</span>
+    </div>
+
+</div>
+
+        <nav>
+
+            <a href="index.html">Home</a>
+
+            <a href="about.html">About</a>
+
+            <a href="courses.html">Courses</a>
+
+            <a href="faculty.html">Faculty</a>
+
+            <a href="specialities.html">Specialities</a>
+
+            <a href="admission.html">Admission</a>
+
+            <a href="index.html#contact">Contact</a>
+
+        </nav>
+
+    </header>
+
+
+    <!-- PAGE TITLE -->
+
+    <section class="page-title">
+
+        <h1>About Us</h1>
+
+        <p>
+            MULHIRUSSUNNA EXCELLENT ACADEMY
+        </p>
+
+    </section>
+
+
+    <!-- CONTENT -->
+
+    <main class="content">
+
+
+        <!-- INTRO -->
+
+        <div class="intro">
+
+            <h2>
+                About Our Academy
+            </h2>
+
+            <p>
+                MULHIRUSSUNNA EXCELLENT ACADEMY is an
+                educational institution committed to nurturing
+                students through a balanced combination of
+                traditional learning, academic education,
+                spiritual guidance and modern educational
+                opportunities.
+            </p>
+
+        </div>
+
+
+        <!-- OUR ACADEMY -->
+
+        <div class="about-box">
+
+            <h2>
+                Our Educational Approach
+            </h2>
+
+            <p>
+                Our academy gives importance to the development
+                of knowledge, discipline, character and personal
+                abilities of students.
+            </p>
+
+            <p>
+                Along with the traditional Dars system and
+                Ahlussunna ideological studies, students are
+                provided opportunities for academic learning,
+                linguistic development and modern educational
+                experiences.
+            </p>
+
+            <p>
+                Through a supportive learning environment,
+                students are encouraged to grow academically,
+                spiritually and personally.
+            </p>
+
+        </div>
+
+
+        <!-- VISION & MISSION -->
+
+        <div class="vm-container">
+
+
+            <div class="vm-card">
+
+                <h3>
+                    Our Vision
+                </h3>
+
+                <p>
+                    To nurture a generation of knowledgeable,
+                    disciplined, responsible and confident
+                    individuals who can contribute positively
+                    to society.
+                </p>
+
+            </div>
+
+
+            <div class="vm-card">
+
+                <h3>
+                    Our Mission
+                </h3>
+
+                <p>
+                    To provide quality education through an
+                    inspiring environment that combines
+                    traditional knowledge, academic excellence,
+                    spiritual development and modern learning.
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+        <!-- EDUCATIONAL APPROACH -->
+
+        <section class="approach">
+
+            <h2>
+                What We Focus On
+            </h2>
+
+            <p class="approach-intro">
+                Our educational approach focuses on the
+                overall development of students and prepares
+                them for both academic and personal growth.
+            </p>
+
+
+            <div class="approach-grid">
+
+
+                <div class="approach-card">
+
+                    <h3>
+                        Traditional Knowledge
+                    </h3>
+
+                    <p>
+                        Learning through the traditional Dars
+                        system and Islamic studies.
+                    </p>
+
+                </div>
+
+
+                <div class="approach-card">
+
+                    <h3>
+                        Academic Excellence
+                    </h3>
+
+                    <p>
+                        Supporting students in their academic
+                        journey up to graduation level.
+                    </p>
+
+                </div>
+
+
+                <div class="approach-card">
+
+                    <h3>
+                        Character Development
+                    </h3>
+
+                    <p>
+                        Developing discipline, responsibility,
+                        confidence and good character.
+                    </p>
+
+                </div>
+
+
+                <div class="approach-card">
+
+                    <h3>
+                        Spiritual Growth
+                    </h3>
+
+                    <p>
+                        Providing spiritual guidance and
+                        strengthening students' values.
+                    </p>
+
+                </div>
+
+
+                <div class="approach-card">
+
+                    <h3>
+                        Language Skills
+                    </h3>
+
+                    <p>
+                        Encouraging linguistic learning and
+                        effective communication skills.
+                    </p>
+
+                </div>
+
+
+                <div class="approach-card">
+
+                    <h3>
+                        Modern Learning
+                    </h3>
+
+                    <p>
+                        Introducing smart classrooms, IT
+                        resources and modern learning methods.
+                    </p>
+
+                </div>
+
+
+            </div>
+
+        </section>
+
+
+        <!-- CTA -->
+
+        <div class="cta">
+
+            <h2>
+                Discover MULHIRUSSUNNA
+            </h2>
+
+            <p>
+                Explore our courses, specialities and faculty
+                and learn more about the educational
+                opportunities available at our academy.
+            </p>
+
+            <a href="specialities.html" class="btn">
+                Explore Specialities
+            </a>
+
+        </div>
+
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 MULHIRUSSUNNA EXCELLENT ACADEMY
+        </p>
+
+        <br>
+
+        <p>
+            Education • Knowledge • Character
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>

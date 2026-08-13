@@ -1,0 +1,1195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Admission | MULHIRUSSUNNA EXCELLENT ACADEMY</title>
+
+<style>
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #ffffff;
+    color: #222;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    background: #581B4F;
+    color: white;
+    padding: 18px 6%;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+nav {
+    display: flex;
+    gap: 18px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+
+/* ================= PAGE TITLE ================= */
+
+.page-title {
+    background: linear-gradient(
+        135deg,
+        #581B4F,
+        #7a286d,
+        #3d1238
+    );
+
+    color: white;
+    text-align: center;
+
+    padding: 70px 20px;
+}
+
+.page-title h1 {
+    font-size: 44px;
+    margin-bottom: 12px;
+}
+
+.page-title p {
+    font-size: 18px;
+}
+
+
+/* ================= MAIN ================= */
+
+.admission-section {
+    max-width: 1100px;
+    margin: auto;
+    padding: 65px 7%;
+}
+
+.intro {
+    text-align: center;
+    max-width: 850px;
+    margin: 0 auto 45px;
+}
+
+.intro h2 {
+    color: #581B4F;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.intro p {
+    color: #666;
+    line-height: 1.8;
+}
+
+
+/* ================= INFORMATION CARDS ================= */
+
+.info-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+}
+
+.info-card {
+    background: #faf7f9;
+
+    padding: 30px;
+
+    border-radius: 18px;
+
+    box-shadow: 0 6px 20px rgba(0,0,0,0.08);
+
+    border-left: 5px solid #581B4F;
+}
+
+.info-card h3 {
+    color: #581B4F;
+    margin-bottom: 12px;
+}
+
+.info-card p {
+    color: #666;
+    line-height: 1.7;
+}
+
+
+/* ================= APPLY BUTTON ================= */
+
+.apply-area {
+    text-align: center;
+    margin: 50px 0;
+}
+
+.apply-btn {
+    display: inline-block;
+
+    background: #581B4F;
+    color: white;
+
+    padding: 15px 35px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+    font-size: 16px;
+
+    transition: 0.3s;
+}
+
+.apply-btn:hover {
+    background: #7a286d;
+    transform: translateY(-2px);
+}
+
+
+/* ================= FORM ================= */
+
+.form-section {
+    margin-top: 60px;
+
+    background: #faf7f9;
+
+    padding: 40px;
+
+    border-radius: 22px;
+
+    box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+}
+
+.form-section h2 {
+    text-align: center;
+
+    color: #581B4F;
+
+    font-size: 30px;
+
+    margin-bottom: 10px;
+}
+
+.form-intro {
+    text-align: center;
+
+    color: #666;
+
+    margin-bottom: 35px;
+
+    line-height: 1.7;
+}
+
+
+/* FORM GROUP */
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+
+    color: #581B4F;
+
+    font-weight: bold;
+
+    margin-bottom: 8px;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+
+    width: 100%;
+
+    padding: 13px 15px;
+
+    border: 1px solid #ddd;
+
+    border-radius: 10px;
+
+    font-size: 15px;
+
+    outline: none;
+
+    background: white;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+
+    border-color: #581B4F;
+
+    box-shadow: 0 0 0 2px rgba(88,27,79,0.08);
+}
+
+
+/* FORM ROW */
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 20px;
+}
+
+
+/* TEXTAREA */
+
+.form-group textarea {
+
+    min-height: 110px;
+
+    resize: vertical;
+}
+
+
+/* ================= SUBMIT BUTTON ================= */
+
+.submit-btn {
+
+    display: block;
+
+    width: 100%;
+
+    border: none;
+
+    background: #581B4F;
+
+    color: white;
+
+    padding: 15px;
+
+    border-radius: 30px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+}
+
+.submit-btn:hover {
+
+    background: #7a286d;
+
+    transform: translateY(-2px);
+}
+
+
+/* ================= STATUS MESSAGE ================= */
+
+#statusMessage {
+
+    display: none;
+
+    margin-top: 20px;
+
+    padding: 15px;
+
+    background: #f3eaf1;
+
+    border-radius: 10px;
+
+    text-align: center;
+
+    color: #581B4F;
+
+    line-height: 1.6;
+
+    font-size: 14px;
+}
+
+
+/* ================= NOTE ================= */
+
+.note {
+
+    margin-top: 20px;
+
+    text-align: center;
+
+    color: #777;
+
+    font-size: 13px;
+
+    line-height: 1.6;
+}
+
+
+/* ================= CONTACT ================= */
+
+.contact-box {
+
+    margin-top: 55px;
+
+    background: #581B4F;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 40px 25px;
+
+    border-radius: 20px;
+}
+
+.contact-box h2 {
+    margin-bottom: 12px;
+}
+
+.contact-box p {
+
+    margin-bottom: 22px;
+
+    line-height: 1.7;
+}
+
+
+/* CONTACT BUTTON */
+
+.btn {
+
+    display: inline-block;
+
+    background: white;
+
+    color: #581B4F;
+
+    padding: 13px 28px;
+
+    border-radius: 30px;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+    margin: 5px;
+
+    transition: 0.3s;
+}
+
+.btn:hover {
+
+    transform: translateY(-2px);
+
+    background: #f4f4f4;
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+
+    background: #3d1238;
+
+    color: white;
+
+    text-align: center;
+
+    padding: 28px 20px;
+
+    margin-top: 50px;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+
+/* ================= MOBILE ================= */
+
+@media (max-width: 750px) {
+
+    header {
+
+        flex-direction: column;
+
+        gap: 15px;
+    }
+
+    nav {
+
+        flex-wrap: wrap;
+
+        justify-content: center;
+
+        gap: 10px;
+    }
+
+    nav a {
+        font-size: 12px;
+    }
+
+    .page-title h1 {
+        font-size: 32px;
+    }
+
+    .page-title p {
+        font-size: 16px;
+    }
+
+    .info-container,
+    .form-row {
+
+        grid-template-columns: 1fr;
+    }
+
+    .form-section {
+
+        padding: 25px 18px;
+    }
+
+    .admission-section {
+
+        padding: 50px 6%;
+    }
+
+    .intro h2 {
+
+        font-size: 27px;
+    }
+
+}
+.brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.brand img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.brand-name {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.2;
+}
+
+.brand-name span {
+    display: block;
+    font-size: 11px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ================= HEADER ================= -->
+
+<header>
+
+    <div class="brand">
+
+    <img src="images/logo.png"
+         alt="MULHIRUSSUNNA Logo">
+
+    <div class="brand-name">
+        MULHIRUSSUNNA
+        <span>EXCELLENT ACADEMY</span>
+    </div>
+
+</div>
+
+    <nav>
+
+        <a href="index.html">Home</a>
+
+        <a href="about.html">About</a>
+
+        <a href="courses.html">Courses</a>
+
+        <a href="faculty.html">Faculty</a>
+
+        <a href="specialities.html">Specialities</a>
+
+        <a href="admission.html">Admission</a>
+
+        <a href="index.html#contact">Contact</a>
+
+    </nav>
+
+</header>
+
+
+<!-- ================= PAGE TITLE ================= -->
+
+<section class="page-title">
+
+    <h1>
+        Admission
+    </h1>
+
+    <p>
+        Begin Your Journey With Us
+    </p>
+
+</section>
+
+
+<!-- ================= ADMISSION ================= -->
+
+<section class="admission-section">
+
+
+    <!-- INTRO -->
+
+    <div class="intro">
+
+        <h2>
+            Admissions at MULHIRUSSUNNA
+        </h2>
+
+        <p>
+            We welcome students who are interested in learning,
+            developing knowledge and building good character.
+            Explore the admission information below and apply
+            through our online admission form.
+        </p>
+
+    </div>
+
+
+    <!-- ================= INFORMATION CARDS ================= -->
+
+    <div class="info-container">
+
+
+        <div class="info-card">
+
+            <h3>
+                📚 Programs
+            </h3>
+
+            <p>
+                Explore our Islamic studies, academic programs,
+                language learning and other educational
+                opportunities.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <h3>
+                📝 Admission Enquiry
+            </h3>
+
+            <p>
+                For current admission availability, eligibility,
+                course details and other information, please
+                contact the academy.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <h3>
+                💰 Fee Information
+            </h3>
+
+            <p>
+                For details regarding course fees and other
+                financial information, please contact
+                MULHIRUSSUNNA EXCELLENT ACADEMY.
+            </p>
+
+        </div>
+
+
+        <div class="info-card">
+
+            <h3>
+                📞 Need Help?
+            </h3>
+
+            <p>
+                Our academy can provide further information
+                regarding the admission process through phone
+                or WhatsApp.
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+    <!-- ================= APPLY BUTTON ================= -->
+
+    <div class="apply-area">
+
+        <a
+            href="#application-form"
+            class="apply-btn">
+
+            Apply Now
+
+        </a>
+
+    </div>
+
+
+    <!-- ================= APPLICATION FORM ================= -->
+
+    <div
+        class="form-section"
+        id="application-form">
+
+
+        <h2>
+            Online Admission Form
+        </h2>
+
+
+        <p class="form-intro">
+
+            Please fill in the following details carefully.
+            After submitting the form, your admission enquiry
+            will be prepared as a WhatsApp message.
+
+        </p>
+
+
+        <form id="admissionForm">
+
+
+            <!-- STUDENT NAME -->
+
+            <div class="form-group">
+
+                <label>
+                    Student Name *
+                </label>
+
+                <input
+                    type="text"
+                    name="studentName"
+                    placeholder="Enter student's full name"
+                    required>
+
+            </div>
+
+
+            <!-- DATE OF BIRTH + GENDER -->
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label>
+                        Date of Birth *
+                    </label>
+
+                    <input
+                        type="date"
+                        name="dob"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        Gender *
+                    </label>
+
+                    <select
+                        name="gender"
+                        required>
+
+                        <option value="">
+                            Select Gender
+                        </option>
+
+                        <option value="Male">
+                            Male
+                        </option>
+
+                        <option value="Female">
+                            Female
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- FATHER -->
+
+            <div class="form-group">
+
+                <label>
+                    Father's Name
+                </label>
+
+                <input
+                    type="text"
+                    name="father"
+                    placeholder="Enter father's name">
+
+            </div>
+
+
+            <!-- MOTHER -->
+
+            <div class="form-group">
+
+                <label>
+                    Mother's Name
+                </label>
+
+                <input
+                    type="text"
+                    name="mother"
+                    placeholder="Enter mother's name">
+
+            </div>
+
+
+            <!-- PHONE + WHATSAPP -->
+
+            <div class="form-row">
+
+
+                <div class="form-group">
+
+                    <label>
+                        Phone Number *
+                    </label>
+
+                    <input
+                        type="tel"
+                        name="phone"
+                        placeholder="Enter phone number"
+                        required>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>
+                        WhatsApp Number
+                    </label>
+
+                    <input
+                        type="tel"
+                        name="whatsapp"
+                        placeholder="Enter WhatsApp number">
+
+                </div>
+
+
+            </div>
+
+
+            <!-- ADDRESS -->
+
+            <div class="form-group">
+
+                <label>
+                    Address *
+                </label>
+
+                <textarea
+                    name="address"
+                    placeholder="Enter your full address"
+                    required></textarea>
+
+            </div>
+
+
+            <!-- COURSE -->
+
+            <div class="form-group">
+
+                <label>
+                    Interested Course *
+                </label>
+
+                <select
+                    name="course"
+                    required>
+
+                    <option value="">
+                        Select a course
+                    </option>
+
+                    <option value="Islamic Studies">
+                        Islamic Studies
+                    </option>
+
+                    <option value="Arabic Language">
+                        Arabic Language
+                    </option>
+
+                    <option value="Qur'an Studies">
+                        Qur'an Studies
+                    </option>
+
+                    <option value="Academic Programs">
+                        Academic Programs
+                    </option>
+
+                    <option value="Computer Education">
+                        Computer Education
+                    </option>
+
+                    <option value="Skill Development">
+                        Skill Development
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- PREVIOUS EDUCATION -->
+
+            <div class="form-group">
+
+                <label>
+                    Previous Education
+                </label>
+
+                <input
+                    type="text"
+                    name="education"
+                    placeholder="Enter previous institution / qualification">
+
+            </div>
+
+
+            <!-- ADDITIONAL INFORMATION -->
+
+            <div class="form-group">
+
+                <label>
+                    Additional Information
+                </label>
+
+                <textarea
+                    name="message"
+                    placeholder="Any additional information you would like to provide"></textarea>
+
+            </div>
+
+
+            <!-- SUBMIT -->
+
+            <button
+                type="submit"
+                class="submit-btn">
+
+                📲 Submit Admission Enquiry
+
+            </button>
+
+
+            <!-- STATUS -->
+
+            <div id="statusMessage">
+
+                Preparing your WhatsApp admission enquiry...
+
+            </div>
+
+
+            <!-- NOTE -->
+
+            <p class="note">
+
+                By submitting this form, you agree to provide
+                accurate information for admission enquiry
+                purposes.
+
+            </p>
+
+
+        </form>
+
+    </div>
+
+
+    <!-- ================= CONTACT ================= -->
+
+    <div class="contact-box">
+
+        <h2>
+            Need More Information?
+        </h2>
+
+        <p>
+            Contact MULHIRUSSUNNA EXCELLENT ACADEMY directly.
+        </p>
+
+
+        <a
+            href="https://api.whatsapp.com/send?phone=919048593825"
+            target="_blank"
+            class="btn">
+
+            💬 WhatsApp
+
+        </a>
+
+
+        <a
+            href="tel:9048593825"
+            class="btn">
+
+            📞 Call Us
+
+        </a>
+
+    </div>
+
+
+</section>
+
+
+<!-- ================= FOOTER ================= -->
+
+<footer>
+
+    <p>
+        © 2026 MULHIRUSSUNNA EXCELLENT ACADEMY
+    </p>
+
+    <br>
+
+    <p>
+        Education • Knowledge • Character
+    </p>
+
+</footer>
+
+
+<!-- ================= JAVASCRIPT ================= -->
+
+<script>
+
+document
+.getElementById("admissionForm")
+.addEventListener("submit", function(event) {
+
+    event.preventDefault();
+
+
+    /* ================= GET FORM VALUES ================= */
+
+    const studentName =
+        document.querySelector('[name="studentName"]').value.trim();
+
+    const dob =
+        document.querySelector('[name="dob"]').value;
+
+    const gender =
+        document.querySelector('[name="gender"]').value;
+
+    const father =
+        document.querySelector('[name="father"]').value.trim();
+
+    const mother =
+        document.querySelector('[name="mother"]').value.trim();
+
+    const phone =
+        document.querySelector('[name="phone"]').value.trim();
+
+    const whatsapp =
+        document.querySelector('[name="whatsapp"]').value.trim();
+
+    const address =
+        document.querySelector('[name="address"]').value.trim();
+
+    const course =
+        document.querySelector('[name="course"]').value;
+
+    const education =
+        document.querySelector('[name="education"]').value.trim();
+
+    const message =
+        document.querySelector('[name="message"]').value.trim();
+
+
+    /* ================= WHATSAPP MESSAGE ================= */
+
+    const whatsappMessage =
+
+`*MULHIRUSSUNNA EXCELLENT ACADEMY*
+*ONLINE ADMISSION ENQUIRY*
+
+━━━━━━━━━━━━━━━━━━
+
+👤 *STUDENT DETAILS*
+
+Student Name: ${studentName}
+
+Date of Birth: ${dob}
+
+Gender: ${gender}
+
+Father's Name: ${father || "Not provided"}
+
+Mother's Name: ${mother || "Not provided"}
+
+━━━━━━━━━━━━━━━━━━
+
+📞 *CONTACT DETAILS*
+
+Phone: ${phone}
+
+WhatsApp: ${whatsapp || "Not provided"}
+
+Address: ${address}
+
+━━━━━━━━━━━━━━━━━━
+
+📚 *ACADEMIC DETAILS*
+
+Interested Course: ${course}
+
+Previous Education: ${education || "Not provided"}
+
+━━━━━━━━━━━━━━━━━━
+
+📝 *ADDITIONAL INFORMATION*
+
+${message || "No additional information"}
+
+━━━━━━━━━━━━━━━━━━
+
+This enquiry was submitted through the academy website.`;
+
+
+    /* ================= ENCODE MESSAGE ================= */
+
+    const encodedMessage =
+        encodeURIComponent(whatsappMessage);
+
+
+    /*
+       Academy WhatsApp number
+
+       India country code = 91
+       Number = 9048593825
+    */
+
+    const academyNumber =
+        "919048593825";
+
+
+    /*
+       IMPORTANT:
+
+       We use HTTPS WhatsApp API.
+
+       We DO NOT use:
+
+       whatsapp://
+
+       Therefore Acode/Chrome should not show:
+
+       ERR_UNKNOWN_URL_SCHEME
+    */
+
+    const whatsappURL =
+        "https://api.whatsapp.com/send?phone=" +
+        academyNumber +
+        "&text=" +
+        encodedMessage;
+
+
+    /* ================= SHOW STATUS ================= */
+
+    const status =
+        document.getElementById("statusMessage");
+
+    status.style.display = "block";
+
+    status.innerHTML =
+        "✅ Your admission enquiry is ready.<br>" +
+        "Opening WhatsApp...";
+
+
+    /*
+       Small delay so the user can see
+       the confirmation message.
+    */
+
+    setTimeout(function() {
+
+        /*
+           IMPORTANT:
+           Use normal HTTPS URL instead of
+           whatsapp:// scheme.
+        */
+
+        window.location.href = whatsappURL;
+
+    }, 500);
+
+
+});
+
+</script>
+
+
+</body>
+
+</html>
